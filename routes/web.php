@@ -18,9 +18,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/chirps', function(){
+    return view('chirps.index');
+})->name('chirps.index');
+
+Route::post('/chirps', function(){
+    $message = request('message'); //Guardamos la variable para luego insertar en db
+    //Insert to database
+    
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
