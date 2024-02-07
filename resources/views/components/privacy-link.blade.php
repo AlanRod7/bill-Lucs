@@ -405,6 +405,10 @@
             margin-left: 1rem
         }
 
+        .mt-32 {
+            margin-top: 8rem
+        }
+
         .mt-16 {
             margin-top: 4rem
         }
@@ -835,11 +839,13 @@
 
     <div
         class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
-        <div class="sm:fixed sm:top-0 sm:left-0 mt-4 flex justify-center">
-            <img src="/img/Bill-lucs.png" alt="" width="100" height="100">
-            <!-- Ajusta el width y height según tus necesidades -->
+        <div class="sm:absolute sm:top-0 sm:left-0 mt-4 flex justify-center">
+            <a href="{{ url('/') }}">
+                <img src="/img/Bill-lucs.png" alt="" width="100" height="100">
+                <!-- Ajusta el width y height según tus necesidades -->
+            </a>
         </div>
-        <div class="sm:fixed sm:top-0 mt-4 grid grid-cols-1 md:grid-cols-1 gap-6 lg:gap-8">
+        <div class="sm:absolute sm:top-0 mt-4 grid grid-cols-1 md:grid-cols-1 gap-6 lg:gap-8">
             <div
                 class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
                 <div>
@@ -849,7 +855,7 @@
                 </div>
             </div>
         </div>
-        <div class="">
+        <div class="lg:mt-32 sm:mt-16 md:mt-32">
             <div class="grid grid-cols-1 gap-6 lg:gap-8">
                 <div
                     class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
@@ -875,7 +881,7 @@
                             Para las operaciones que usted realice con nosotros se recabarán los siguientes datos
                             personales:
 
-                        <ul class="list-disc text-gray-500 dark:text-gray-400 text-sm">
+                        <ul class="list-disc text-gray-500 dark:text-gray-400 text-sm ml-4">
                             <li>
                                 Datos de identificación y contacto: Nombre, dirección, teléfono, correo electrónico.
                             </li>
@@ -901,7 +907,7 @@
                         <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
                             Sus datos personales serán utilizados para las siguientes finalidades:
 
-                        <ul class="list-disc text-gray-500 dark:text-gray-400 text-sm">
+                        <ul class="list-disc text-gray-500 dark:text-gray-400 text-sm ml-4">
                             <li>
                                 Evaluar su elegibilidad para préstamos bancarios.
                             </li>
@@ -1003,7 +1009,7 @@
                             informado sobre qué datos personales recabamos, cómo los utilizamos, con quién los
                             compartimos, y cómo puede ejercer sus derechos sobre estos datos.
                             Nos comprometemos a:
-                        <ul class="list-disc text-gray-500 dark:text-gray-400 text-sm">
+                        <ul class="list-disc text-gray-500 dark:text-gray-400 text-sm ml-4">
                             <li>
                                 Informarle claramente sobre los datos que recabamos y las finalidades específicas para
                                 las cuales se utilizan.
