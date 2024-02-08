@@ -8,14 +8,14 @@
                 <div class="">
                     <!-- Name -->
                     <div>
-                        <x-input-label for="names" :value="__('Name')" />
+                        <x-input-label for="names" :value="__('Nombre')" />
                         <x-text-input id="names" class="block mt-1 w-full" type="text" name="names" :value="old('names')" required autofocus autocomplete="names" />
                         <x-input-error :messages="$errors->get('names')" class="mt-2" />
                     </div>
 
                     <!-- Second Name -->
                     <div>
-                        <x-input-label for="second_name" :value="__('Second Name')" />
+                        <x-input-label for="second_name" :value="__('Apellido')" />
                         <x-text-input id="second_name" class="block mt-1 w-full" type="text" name="second_name" :value="old('second_name')" required autofocus autocomplete="names" />
                         <x-input-error :messages="$errors->get('second_name')" class="mt-2" />
                     </div>
@@ -43,7 +43,7 @@
 
                     <!-- Telefono -->
                     <div>
-                        <x-input-label for="telefono" :value="__('Telefono')" />
+                        <x-input-label for="telefono" :value="__('Teléfono')" />
                         <x-text-input id="telefono" class="block mt-1 w-full" type="number" name="telefono" :value="old('telefono')" required autofocus autocomplete="names" />
                         <x-input-error :messages="$errors->get('telefono')" class="mt-2" />
                     </div>
@@ -68,7 +68,7 @@
 
                     <!-- Codigo postal -->
                     <div>
-                        <x-input-label for="cp" :value="__('Codigo postal')" />
+                        <x-input-label for="cp" :value="__('Código postal')" />
                         <x-text-input id="cp" class="block mt-1 w-full" type="number" name="cp" :value="old('cp')" required autofocus autocomplete="names" />
                         <x-input-error :messages="$errors->get('cp')" class="mt-2" />
                     </div>
@@ -89,14 +89,14 @@
 
                     <!-- Email Address -->
                     <div>
-                        <x-input-label for="email" :value="__('Email')" />
+                        <x-input-label for="email" :value="__('Correo')" />
                         <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="names" />
                         <x-input-error :messages="$errors->get('email')" class="mt-2" />
                     </div>
 
                     <!-- Password -->
                     <div>
-                        <x-input-label for="password" :value="__('Password')" />
+                        <x-input-label for="password" :value="__('Contraseña')" />
 
                         <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
 
@@ -105,7 +105,7 @@
 
                     <!-- Confirm Password -->
                     <div>
-                        <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
+                        <x-input-label for="password_confirmation" :value="__('Confirmar Contraseña')" />
 
                         <x-text-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
 
@@ -117,7 +117,7 @@
             </div>
             <div class="flex justify-end mt-4" style="justify-content: center;">
                 <a class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800" href="{{ route('login') }}">
-                    {{ __('¿Ya estas registrado?') }}
+                    {{ __('¿Ya estás registrado?') }}
                 </a>
 
                 <x-primary-button class="ms-16">
